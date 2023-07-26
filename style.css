@@ -1,0 +1,83 @@
+:root {
+    --background: hsla(240, 2%, 20%, 0.747);
+    --Youtube: #1411e2;
+    --Facebook: #dd0b27;
+    --Instagram:  #e20e20;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.background{
+    background-color: var(--background);
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.social-media-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+}
+
+.social-media-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+}
+
+.social-media-button:hover{
+    outline-offset: 3px;
+    transition: all 0.3s;
+}
+
+.social-media-button ing {
+    transition: all 0.3s;
+}
+
+.social-media-button:hover ing {
+    transform: scale(1.15);
+}
+
+.social-media-button:hover:nth-child(1) {
+    background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%,
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 68%, #285aeb 90%
+    );
+}
+
+.social-media-button:hover:nth-child(2){
+    background-color: var(--Instagram);
+}
+
+.social-media-button:hover:nth-child(3){
+    background-color: var(--Youtube);
+}
+
+.social-media-button:hover:nth-child(4){
+    background-color: var(--Facebook);
+}
+
