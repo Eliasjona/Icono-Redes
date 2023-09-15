@@ -1,8 +1,8 @@
 :root {
     --background: hsla(240, 2%, 20%, 0.747);
-    --Youtube: #1411e2;
-    --Facebook: #dd0b27;
-    --Instagram:  #e20e20;
+    --Instagram: #e21111;
+    --Facebook: #200bdd;
+    --Youtube:  #e20e35;
 }
 
 *{
@@ -14,7 +14,7 @@
 
 .background{
     background-color: var(--background);
-    display: flex;
+    display: grid;
     place-items: center;
     height: 100vh;
 }
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
 }
 
 .social-media-button{
@@ -47,6 +47,7 @@
     display: grid;
     place-items: center;
 }
+
 
 .social-media-button:hover{
     outline-offset: 3px;
@@ -74,10 +75,10 @@
 }
 
 .social-media-button:hover:nth-child(3){
-    background-color: var(--Youtube);
+    background-color: var(--Facebook);
 }
 
-.social-media-button:hover:nth-child(4){
-    background-color: var(--Facebook);
+.social-media-button:hover:nth-child(5){
+    background-color: var(--Youtube);
 }
 
